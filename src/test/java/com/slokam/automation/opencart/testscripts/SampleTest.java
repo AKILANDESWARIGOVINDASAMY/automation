@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class SampleTest {
 
-	@Test
+	/*@Test
 	public void testChrome() {
 		System.out.println("Starting the testcase - testChrome " + System.currentTimeMillis());
 		System.out.println("I am testChrome");
@@ -29,7 +29,7 @@ public class SampleTest {
 		driver.get("http://localhost/opencart/");
 		driver.quit();
 		System.out.println("End of my testcase - testChrome " + System.currentTimeMillis());
-	}
+	}**/
 
 	@Test
 	public void testFirefox() {
@@ -38,17 +38,17 @@ public class SampleTest {
 		Capabilities cap = DesiredCapabilities.firefox();
 		URL url = null;
 		try {
-			url = new URL("http://localhost:4444/wd/hub");
+			url = new URL("http://52.170.82.26:4444/wd/hub");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		WebDriver driver = new RemoteWebDriver(url,cap);
-		driver.get("http://localhost/opencart/");
+		driver.get("https://www.google.com/");
 		driver.quit();
 		System.out.println("End of my testcase - testFirefox " + System.currentTimeMillis());
 	}
 
-	@Test
+	/*@Test
 	public void testChrome1() {
 		System.out.println("Starting the testcase - testChrome " + System.currentTimeMillis());
 		System.out.println("I am testChrome1");
@@ -114,5 +114,5 @@ public class SampleTest {
 		driver.get("http://localhost/opencart/");
 		driver.quit();
 		System.out.println("End of my testcase - testFirefox2 " + System.currentTimeMillis());
-	}
+	}*/
 }
