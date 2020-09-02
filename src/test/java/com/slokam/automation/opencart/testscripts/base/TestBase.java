@@ -34,7 +34,7 @@ public class TestBase {
 			}
 			URL hubUrl = null;
 			try {
-				hubUrl = new URL("http://localhost:4444/wd/hub");
+				hubUrl = new URL("http://52.170.82.26:4444/wd/hub");
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
