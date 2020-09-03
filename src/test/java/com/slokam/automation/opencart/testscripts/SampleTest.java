@@ -35,16 +35,18 @@ public class SampleTest {
 	public void testFirefox() {
 		System.out.println("Starting the testcase - testFirefox " + System.currentTimeMillis());
 		System.out.println("I am testFirefox");
-		Capabilities cap = DesiredCapabilities.firefox();
+		/*Capabilities cap = DesiredCapabilities.firefox();
 		
 		URL url = null;
 		try {
 			url = new URL("http://52.147.203.90:4444/wd/hub");
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		WebDriver driver = new RemoteWebDriver(url,cap);
-		driver.get("https://www.google.com/");
+		}*/
+		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://52.147.203.90:4444/wd/hub"),new FirefoxOptions());
+                driver.get("http://www.google.com");
+		//WebDriver driver = new RemoteWebDriver(url,cap);
+		//driver.get("https://www.google.com/");
 		driver.quit();
 		System.out.println("End of my testcase - testFirefox " + System.currentTimeMillis());
 	}
