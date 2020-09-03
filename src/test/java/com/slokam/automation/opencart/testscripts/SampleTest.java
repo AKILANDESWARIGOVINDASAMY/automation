@@ -35,9 +35,9 @@ public class SampleTest {
 	public void testFirefox() {
 		System.out.println("Starting the testcase - testFirefox " + System.currentTimeMillis());
 		System.out.println("I am testFirefox");
-		/*Capabilities cap = DesiredCapabilities.firefox();*/
-		DesiredCapabilities capabilities = DesiredCapabilities.firefox ();
-                capabilities cap = capabilities.setPlatform ( Platform.LINUX );
+		Capabilities cap = DesiredCapabilities.firefox();
+		/*DesiredCapabilities capabilities = DesiredCapabilities.firefox ();
+                capabilities cap = capabilities.setPlatform ( Platform.LINUX );*/
 		URL url = null;
 		try {
 			url = new URL("http://52.170.82.26:4444/wd/hub");
