@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class SampleTest {
 
-	/*@Test
+	@Test
 	public void testChrome() {
 		System.out.println("Starting the testcase - testChrome " + System.currentTimeMillis());
 		System.out.println("I am testChrome");
@@ -20,24 +20,23 @@ public class SampleTest {
 		Capabilities cap = DesiredCapabilities.chrome();
 		URL url = null;
 		try {
-			url = new URL("http://localhost:4444/wd/hub");
+			url = new URL("http://192.168.1.101:5566/wd/hub");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		WebDriver driver = new RemoteWebDriver(url,cap);
 		
-		driver.get("http://localhost/opencart/");
+		driver.get("https://www.google.com/");
 		driver.quit();
 		System.out.println("End of my testcase - testChrome " + System.currentTimeMillis());
-	}**/
+	}
 
-	@Test
+	/*@Test
 	public void testFirefox() {
 		System.out.println("Starting the testcase - testFirefox " + System.currentTimeMillis());
 		System.out.println("I am testFirefox");
 		Capabilities cap = DesiredCapabilities.firefox();
-		/*DesiredCapabilities capabilities = DesiredCapabilities.firefox ();
-                capabilities cap = capabilities.setPlatform ( Platform.LINUX );*/
+		
 		URL url = null;
 		try {
 			url = new URL("http://192.168.1.101:5566/wd/hub");
@@ -48,7 +47,7 @@ public class SampleTest {
 		driver.get("https://www.google.com/");
 		driver.quit();
 		System.out.println("End of my testcase - testFirefox " + System.currentTimeMillis());
-	}
+	}*/
 
 	/*@Test
 	public void testChrome1() {
