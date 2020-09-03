@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class SampleTest {
 
-	@Test
+	/*@Test
 	public void testChrome() {
 		System.out.println("Starting the testcase - testChrome " + System.currentTimeMillis());
 		System.out.println("I am testChrome");
@@ -29,9 +29,9 @@ public class SampleTest {
 		driver.get("https://www.google.com/");
 		driver.quit();
 		System.out.println("End of my testcase - testChrome " + System.currentTimeMillis());
-	}
+	}*/
 
-	/*@Test
+	@Test
 	public void testFirefox() {
 		System.out.println("Starting the testcase - testFirefox " + System.currentTimeMillis());
 		System.out.println("I am testFirefox");
@@ -39,7 +39,7 @@ public class SampleTest {
 		
 		URL url = null;
 		try {
-			url = new URL("http://192.168.1.101:5566/wd/hub");
+			url = new URL("http://52.147.203.90:4444/wd/hub");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -47,7 +47,7 @@ public class SampleTest {
 		driver.get("https://www.google.com/");
 		driver.quit();
 		System.out.println("End of my testcase - testFirefox " + System.currentTimeMillis());
-	}*/
+	}
 
 	/*@Test
 	public void testChrome1() {
