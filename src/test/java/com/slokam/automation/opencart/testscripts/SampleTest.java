@@ -40,7 +40,7 @@ public class SampleTest {
                 capabilities cap = capabilities.setPlatform ( Platform.LINUX );*/
 		URL url = null;
 		try {
-			url = new URL("http://192.168.0.103:5566/wd/hub");
+			url = new URL("http://192.168.1.101:5566/wd/hub");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
